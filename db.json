@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "newTask": "are you going to give up so easily",
+      "check": false,
+      "id": 1
+    },
+    {
+      "newTask": "definitely not",
+      "check": false,
+      "id": 2
+    },
+    {
+      "newTask": "we will be back!!!",
+      "check": false,
+      "id": 3
+    },
+    {
+      "newTask": "trouble is what excites me ",
+      "check": false,
+      "id": 4
+    }
+  ]
+}
