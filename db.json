@@ -1,17 +1,7 @@
 {
   "todos": [
     {
-      "newTask": "Start Jonas Schmedtmann's React course",
-      "check": false,
-      "id": 1
-    },
-    {
-      "newTask": "Take a course on python",
-      "check": false,
-      "id": 2
-    },
-    {
-      "newTask": "Get ready for the University",
+      "newTask": "wait what",
       "check": false,
       "id": 3
     }

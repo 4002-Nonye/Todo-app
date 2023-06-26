@@ -34,10 +34,11 @@ body {
     margin-right: 10px;
     cursor: pointer;
 }
-.check:checked{
+.check.checked{
   background: url(./assets/images/icon-check.svg), linear-gradient(to right,hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
     background-repeat: no-repeat;
     background-position: center;
     border: none;
+
 }
 .hov.active{@apply text-brightBlue}

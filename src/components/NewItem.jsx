@@ -3,6 +3,8 @@ import TasksContext from "../context/Tasks";
 
 const NewItem = ({ task }) => {
   const { deleteTodo } = useContext(TasksContext);
+  const [selectedId,setSelectedId] =useState(null)
+  
  
  
 
@@ -11,15 +13,22 @@ const NewItem = ({ task }) => {
     deleteTodo(task.id);
   };
 
+  const handleDone =(id)=>{
+    setSelectedId(id)
+  
+    
+    console.log(id)
+
+  }
  
 
   return (
     <div className="border-b  border-darkTheme-veryDarkGrayishBluedk no-border flex w-full justify-between items-center ">
-      <label className="flex relative pointer items-center p-4" >
+      <label className="flex relative pointer items-center p-4" onClick={()=>handleDone(task.id)} >
         {" "}
         
-        <input type="checkbox" className='check' />{" "}
-        <p className={`text-darkTheme-lightGrayishBlueDark font-[700] `}>
+       <input type="checkbox" className={ `check ${task.id===selectedId?'checked':''}`}/>
+        <p className={`text-darkTheme-lightGrayishBlueDark font-[700] ${task.id===selectedId?'line-through':''}`}>
           {task.newTask}
         </p>
       </label>
