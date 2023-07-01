@@ -40,17 +40,18 @@ Users should be able to:
 - View the optimal layout for the app depending on their device's screen size
 - Add new todos to the list
 - Delete todos from the list
+- See hover states for all interactive elements on the page
+- Mark todos as complete
+- Toggle light and dark mode
 
 
 ### Not Completed
 
 Users should be able to:
 
-- See hover states for all interactive elements on the page
-- Mark todos as complete
 - Filter by all/active/complete todos
 - Clear all completed todos
-- Toggle light and dark mode
+
 - **Bonus**: Drag and drop to reorder items on the list
 
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Form from "./Form";
-import { BsFillSunFill } from "react-icons/bs";
+
+import Toggle from "./Toggle";
 // import bgDark from 'sr/assets/images/bg-desktop-dark.jpg'
 
 const Header = ({ title }) => {
@@ -12,7 +13,7 @@ const Header = ({ title }) => {
         <h1 className="text-white uppercase tracking-[1rem] md:text-[3rem] text-[2rem] font-[700]">
           {title}
         </h1>
-        <BsFillSunFill className="text-white md:text-[2rem] text-[1rem] cursor-pointer" />
+     <Toggle/>
       </div>
       <div>
         <Form />

@@ -1,34 +1,31 @@
-import React, { useContext,useState} from "react";
+import React, { useContext, useState } from "react";
 import TasksContext from "../context/Tasks";
 
 const NewItem = ({ task }) => {
-  const { deleteTodo } = useContext(TasksContext);
-  const [selectedId,setSelectedId] =useState(null)
-  
- 
- 
+  const { deleteTodo, handleDone } = useContext(TasksContext);
 
   //DELETE A TASK
   const handleDelete = () => {
     deleteTodo(task.id);
   };
 
-  const handleDone =(id)=>{
-    setSelectedId(id)
-  
-    
-    console.log(id)
-
-  }
- 
-
   return (
-    <div className="border-b  border-darkTheme-veryDarkGrayishBluedk no-border flex w-full justify-between items-center ">
-      <label className="flex relative pointer items-center p-4" onClick={()=>handleDone(task.id)} >
+    <div className="border-b border-darkTheme-lightGrayishBlueDark dark:border-darkTheme-veryDarkGrayishBluedk no-border flex w-full justify-between items-center ">
+      <label className="flex relative pointer items-center p-4">
         {" "}
-        
-       <input type="checkbox" className={ `check ${task.id===selectedId?'checked':''}`}/>
-        <p className={`text-darkTheme-lightGrayishBlueDark font-[700] ${task.id===selectedId?'line-through':''}`}>
+        <input
+          type="checkbox"
+          className={`check ${task.check ? "checked" : ""}`}
+          value={task.check}
+          onChange={() => handleDone(task.id, task.check, task.newTask)}
+        />
+        <p
+          className={` text-darkTheme-veryDarkGrayishBluedk dark:text-darkTheme-lightGrayishBlueDark font-[700] ${
+            task.check
+              ? "line-through text-lightTheme-darkGrayishBlue font-[500] dark:font-[400]"
+              : ""
+          }`}
+        >
           {task.newTask}
         </p>
       </label>
@@ -42,7 +39,6 @@ const NewItem = ({ task }) => {
           />
         </svg>
       </span>
-      
     </div>
   );
 };
