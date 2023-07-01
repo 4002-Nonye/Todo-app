@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <>
-      <div className={`bg-[url(./assets/images/bg-desktop-light.jpg)] bg-cover h-56 lg:h-[16rem] relative  `}></div>
+      <div className="bg-[url(./src/assets/images/bg-desktop-dark.jpg)] bg-cover h-56 lg:h-[16rem] relative  "></div>
       <Header title="todo" />
     </>
   );

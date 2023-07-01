@@ -78,9 +78,8 @@ Users should be able to:
 
 ### What I learned
 - How to create and delete using React js
-- How to manage state with the [useContext()] hook
+- How to manage state with the useContext() hook
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
 
 ### Continued development
@@ -89,6 +88,9 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 - Drag and Drop to reorder list
 - Filter Completed and Non-completed todo
 - Persist more features when site reloads
+- Toggle light and dark mode
+- Mark todos as complete
+- **Bonus**: Drag and drop to reorder items on the list
 
 ## Author
 
