@@ -29,6 +29,16 @@
       "newTask": "ll",
       "check": false,
       "id": 12
+    },
+    {
+      "newTask": "player",
+      "check": false,
+      "id": 13
+    },
+    {
+      "newTask": "mq",
+      "check": false,
+      "id": 14
     }
   ]
 }
