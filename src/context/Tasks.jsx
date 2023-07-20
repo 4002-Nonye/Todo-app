@@ -35,13 +35,13 @@ function Provider({ children }) {
   //PERSIST DATA
 
   const fetchTodos = async () => {
-    const response = await axios.get(" http://localhost:3001/todos");
+    const response = await axios.get(" https://backend-server-for-todo-app.onrender.com/todos");
     setTasks(response.data);
   };
 
   //TO CREATE A NEW TASK
   const createNewTodo = async (newTask, check) => {
-    const response = await axios.post(" http://localhost:3001/todos", {
+    const response = await axios.post(" https://backend-server-for-todo-app.onrender.com/todos", {
       newTask,
       check,
     });
@@ -54,7 +54,7 @@ function Provider({ children }) {
   const deleteTodo = async (id) => {
     //RECEIVE AN ID FROM THE NEW ITEM COMPONENT AND DELETE THE TASK
 
-    const response = await axios.delete(`http://localhost:3001/todos/${id}`);
+    const response = await axios.delete(`https://backend-server-for-todo-app.onrender.com/todos/${id}`);
 
     const updatedTasks = tasks.filter((task) => {
       return task.id !== id;
@@ -69,7 +69,7 @@ function Provider({ children }) {
   //MARK TASK AS COMPLETED
 
   const handleDone = async (id, check, newTask) => {
-    const response = await axios.put(`http://localhost:3001/todos/${id}`, {
+    const response = await axios.put(`https://backend-server-for-todo-app.onrender.com/todos/${id}`, {
       newTask,
       check: !check,
     });
